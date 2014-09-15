@@ -24,7 +24,7 @@ long increment(long i) {
   if ( NULL == (array = (int *)malloc(10 * sizeof(i))) ) {
     Serial.println("malloc failed\n");
   }
-  array[i] = 0;
+  array[i-1] = 0;
   return increment(i);
 }
 
